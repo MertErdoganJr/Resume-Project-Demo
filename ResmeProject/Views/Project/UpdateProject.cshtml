@@ -1,0 +1,24 @@
+﻿@model ResmeProject.Models.TblProject
+
+@{
+    ViewBag.Title = "UpdateProject";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Proje Güncelleme Sayfası</h2>
+
+<form method="post">
+    <label>Proje ID</label>
+    @Html.TextBoxFor(x => x.ProjectID, new { @class = "form-control" })
+    <br />
+    <label>Proje Başlığı</label>
+    @Html.TextBoxFor(x => x.ProjectTitle, new { @class = "form-control" })
+    <br />
+    <label>Proje Açıklaması</label>
+    @Html.TextBoxFor(x => x.ProjectDescription, new { @class = "form-control" })
+    <br />
+    <label>Proje Görseli</label>
+    @Html.TextBoxFor(x => x.ProjectImageUrl, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Projeyi Kaydet</button>
+</form>

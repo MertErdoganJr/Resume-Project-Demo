@@ -1,0 +1,15 @@
+﻿@model ResmeProject.Models.TblCategory
+
+@{
+    ViewBag.Title = "UpdateCategory";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Kategori Güncelleme Sayfası</h2>
+
+<form method="post">
+    @Html.HiddenFor(x=>x.CategoryID)
+    <label>Kategori İsmi</label>
+    @Html.TextBoxFor(x=>x.CAtegoryName, new  { @class = "form-control"})
+    <button class="btn btn-success">Kategoriyi Kaydet</button>
+</form>

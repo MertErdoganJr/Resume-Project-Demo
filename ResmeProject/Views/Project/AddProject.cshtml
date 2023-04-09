@@ -1,0 +1,21 @@
+﻿@model ResmeProject.Models.TblProject
+
+@{
+    ViewBag.Title = "AddProject";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Proje Ekleme</h2>
+
+<form method="post">
+    <label>Proje Başlığı</label>
+    @Html.TextBoxFor(x => x.ProjectTitle, new { @class = "form-control" })
+    <br />
+    <label>Proje Açıklaması</label>
+    @Html.TextBoxFor(x => x.ProjectDescription, new { @class = "form-control" })
+    <br />
+    <label>Proje Görseli</label>
+    @Html.TextBoxFor(x => x.ProjectImageUrl, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Projeyi Kaydet</button>
+</form>

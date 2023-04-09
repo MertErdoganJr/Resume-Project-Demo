@@ -1,0 +1,15 @@
+﻿@model ResmeProject.Models.TblCategory
+
+@{
+    ViewBag.Title = "AddCategory";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Kategori Girişi</h2>
+
+<form method="post">
+    <label>Kategori Adı</label>
+    @Html.TextBoxFor(x=>x.CAtegoryName, new  { @class ="form-control"})
+    <br />
+    <button class="btn btn-success">Kategoriyi Kaydet</button>
+</form>
