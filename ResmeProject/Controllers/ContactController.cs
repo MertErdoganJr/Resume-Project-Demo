@@ -15,11 +15,13 @@ namespace ResmeProject.Controllers
             var values = db.TblContact.ToList();
             return View(values);
         }
+
+        public ActionResult DeleteMessage (int id)
+        {
+            var values = db.TblContact.Find(id);
+            db.TblContact.Remove(values);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
-
-//Kategori Crud işlemleri yapılacak-----bitti
-//Profile Crud işlemleri Tamamlanacak ---- Bitti
-//Proje Crud işlemleri Kısmı tamamlanacak
-//İilişkili tabloların mvc'de kullanımı, prosedür kullanımı
-//isttiksel entity framework metotları
