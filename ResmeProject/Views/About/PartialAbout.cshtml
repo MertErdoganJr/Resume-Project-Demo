@@ -1,0 +1,40 @@
+﻿@using ResmeProject.Models
+@model List<TblProfile>
+
+
+<section class="w3l-about-breadcrumb text-center">
+    <div class="breadcrumb-bg breadcrumb-bg-about py-5">
+        <div class="container py-lg-5 mt-5">
+            <div class="banner-info-grid mt-5">
+                <h2 class="w3l-title-breadcrumb">Hakkımda</h2>
+            </div>
+            <ul class="breadcrumbs-custom-path">
+                <li><a href="/Default/Index/">Ana Sayfa</a></li>
+                <li class="active"><span class="fa fa-angle-right mx-2" aria-hidden="true"></span> Hakkımda</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- //about banner -->
+<!-- About Section -->
+@foreach (var item in Model)
+{
+    <section class="w3l-content-6" id="skills">
+        <div class="content-6-mian py-5">
+            <div class="container py-lg-5 py-md-4 py-2">
+                <div class="content-info-in row">
+                    <div class="content-gd col-lg-5 pe-lg-5 my-image">
+                        <img src="~/Content/starter/assets/images/about.jpg" alt="" class="img-fluid" />
+                    </div>
+                    <div class="content-gd col-lg-7 mt-lg-0 mt-5 align-self ps-lg-5">
+                        <h6 class="w3l-title-small mb-1">Hakkımda</h6>
+                        <h3 class="w3l-title-main mb-lg-4 mb-3">@item.ProfileTitle</h3>
+                        <p class="my-4 pe-lg-5">@item.ProfileDescription</p>
+                        <h5 class="w3l-subtitle mb-md-5 mb-4">Programlama Becerilerim</h5>
+                            @Html.Action("PartialTechnology")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}

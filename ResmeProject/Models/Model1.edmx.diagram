@@ -13,6 +13,8 @@
         <EntityTypeShape EntityType="DbResumeModel.sysdiagrams" Width="1.5" PointX="5.375" PointY="6.75" />
         <EntityTypeShape EntityType="DbResumeModel.TblCategory" Width="1.5" PointX="2.5" PointY="5.875" />
         <AssociationConnector Association="DbResumeModel.FK_TblContact_TblCategory" />
+        <EntityTypeShape EntityType="DbResumeModel.TblService" Width="1.5" PointX="7.375" PointY="0.75" />
+        <EntityTypeShape EntityType="DbResumeModel.TblTestimonial" Width="1.5" PointX="7.375" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
