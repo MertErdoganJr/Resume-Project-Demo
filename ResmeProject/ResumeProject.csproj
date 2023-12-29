@@ -130,6 +130,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\CertificateController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -138,6 +139,7 @@
     <Compile Include="Controllers\SkillController.cs" />
     <Compile Include="Controllers\StatisticController.cs" />
     <Compile Include="Controllers\TechnologyController.cs" />
+    <Compile Include="Controllers\WebProjectsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -458,6 +460,10 @@
     <Content Include="Views\About\PartialTechnology.cshtml" />
     <Content Include="Views\About\PartialVideo.cshtml" />
     <Content Include="Views\About\PartialTestimonials.cshtml" />
+    <Content Include="Views\WebProjects\Index.cshtml" />
+    <Content Include="Views\WebProjects\PartialServices.cshtml" />
+    <Content Include="Views\WebProjects\PartialScripts.cshtml" />
+    <Content Include="Views\Certificate\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
